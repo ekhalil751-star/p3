@@ -1,0 +1,3715 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<style>
+
+/* Added by assistant: ensure full-height viewport and mobile-friendly defaults */
+html,body{height:100%;margin:0;padding:0;-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+/* Make main container take full viewport height to avoid layout shift on scroll */
+main, .container, #app { min-height:100vh; }
+/* Prevent background from moving with scroll */
+body { background-attachment: fixed; -webkit-overflow-scrolling: touch; }
+/* Responsive image defaults */
+img{max-width:100%;height:auto;display:block;}
+/* Preserve existing animations; add smooth page rendering */
+*{box-sizing:border-box;}
+
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Khalil - Digital Marketing Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+/* inlined from style.css */
+:root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  /* RGB versions for opacity control */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  /* Background color tokens (Light Mode) */
+  --color-bg-1: rgba(59, 130, 246, 0.08); /* Light blue */
+  --color-bg-2: rgba(245, 158, 11, 0.08); /* Light yellow */
+  --color-bg-3: rgba(34, 197, 94, 0.08); /* Light green */
+  --color-bg-4: rgba(239, 68, 68, 0.08); /* Light red */
+  --color-bg-5: rgba(147, 51, 234, 0.08); /* Light purple */
+  --color-bg-6: rgba(249, 115, 22, 0.08); /* Light orange */
+  --color-bg-7: rgba(236, 72, 153, 0.08); /* Light pink */
+  --color-bg-8: rgba(6, 182, 212, 0.08); /* Light cyan */
+
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  /* Common style patterns */
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+  --status-bg-opacity: 0.15;
+  --status-border-opacity: 0.25;
+  --select-caret-light: url("svg%3E");
+  --select-caret-dark: url("svg%3E");
+
+  /* RGB versions for opacity control */
+  --color-success-rgb: 33, 128, 141;
+  --color-error-rgb: 192, 21, 47;
+  --color-warning-rgb: 168, 75, 47;
+  --color-info-rgb: 98, 108, 113;
+
+  /* Typography */
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, monospace;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+
+  /* Spacing */
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
+    0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04),
+    0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+
+  /* Animation */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+}
+
+/* Dark mode colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* RGB versions for opacity control (Dark Mode) */
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+
+    /* Background color tokens (Dark Mode) */
+    --color-bg-1: rgba(29, 78, 216, 0.15); /* Dark blue */
+    --color-bg-2: rgba(180, 83, 9, 0.15); /* Dark yellow */
+    --color-bg-3: rgba(21, 128, 61, 0.15); /* Dark green */
+    --color-bg-4: rgba(185, 28, 28, 0.15); /* Dark red */
+    --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple */
+    --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
+    --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
+    --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
+
+    /* Semantic Color Tokens (Dark Mode) */
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+    --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    --button-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+
+    /* Common style patterns - updated for dark mode */
+    --focus-ring: 0 0 0 3px var(--color-focus-ring);
+    --focus-outline: 2px solid var(--color-primary);
+    --status-bg-opacity: 0.15;
+    --status-border-opacity: 0.25;
+    --select-caret-light: url("svg%3E");
+    --select-caret-dark: url("svg%3E");
+
+    /* RGB versions for dark mode */
+    --color-success-rgb: var(--color-teal-300-rgb);
+    --color-error-rgb: var(--color-red-400-rgb);
+    --color-warning-rgb: var(--color-orange-400-rgb);
+    --color-info-rgb: var(--color-gray-300-rgb);
+  }
+}
+
+/* Data attribute for manual theme switching */
+[data-color-scheme="dark"] {
+  /* RGB versions for opacity control (dark mode) */
+  --color-gray-400-rgb: 119, 124, 124;
+  --color-teal-300-rgb: 50, 184, 198;
+  --color-gray-300-rgb: 167, 169, 169;
+  --color-gray-200-rgb: 245, 245, 245;
+
+  /* Colorful background palette - Dark Mode */
+  --color-bg-1: rgba(29, 78, 216, 0.15); /* Dark blue */
+  --color-bg-2: rgba(180, 83, 9, 0.15); /* Dark yellow */
+  --color-bg-3: rgba(21, 128, 61, 0.15); /* Dark green */
+  --color-bg-4: rgba(185, 28, 28, 0.15); /* Dark red */
+  --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple */
+  --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
+  --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
+  --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
+
+  /* Semantic Color Tokens (Dark Mode) */
+  --color-background: var(--color-charcoal-700);
+  --color-surface: var(--color-charcoal-800);
+  --color-text: var(--color-gray-200);
+  --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+  --color-primary: var(--color-teal-300);
+  --color-primary-hover: var(--color-teal-400);
+  --color-primary-active: var(--color-teal-800);
+  --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+  --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+  --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+  --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+  --color-error: var(--color-red-400);
+  --color-success: var(--color-teal-300);
+  --color-warning: var(--color-orange-400);
+  --color-info: var(--color-gray-300);
+  --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+  --color-btn-primary-text: var(--color-slate-900);
+  --color-card-border: rgba(var(--color-gray-400-rgb), 0.15);
+  --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
+  --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+
+  /* Common style patterns - updated for dark mode */
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+  --status-bg-opacity: 0.15;
+  --status-border-opacity: 0.25;
+  --select-caret-light: url("svg%3E");
+  --select-caret-dark: url("svg%3E");
+
+  /* RGB versions for dark mode */
+  --color-success-rgb: var(--color-teal-300-rgb);
+  --color-error-rgb: var(--color-red-400-rgb);
+  --color-warning-rgb: var(--color-orange-400-rgb);
+  --color-info-rgb: var(--color-gray-300-rgb);
+}
+
+[data-color-scheme="light"] {
+  /* RGB versions for opacity control (light mode) */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+
+  /* RGB versions for light mode */
+  --color-success-rgb: var(--color-teal-500-rgb);
+  --color-error-rgb: var(--color-red-500-rgb);
+  --color-warning-rgb: var(--color-orange-500-rgb);
+  --color-info-rgb: var(--color-slate-500-rgb);
+}
+
+/* Base styles */
+html {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+}
+h2 {
+  font-size: var(--font-size-3xl);
+}
+h3 {
+  font-size: var(--font-size-2xl);
+}
+h4 {
+  font-size: var(--font-size-xl);
+}
+h5 {
+  font-size: var(--font-size-lg);
+}
+h6 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  margin: 0 0 var(--space-16) 0;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+code,
+pre {
+  font-family: var(--font-family-mono);
+  font-size: calc(var(--font-size-base) * 0.95);
+  background-color: var(--color-secondary);
+  border-radius: var(--radius-sm);
+}
+
+code {
+  padding: var(--space-1) var(--space-4);
+}
+
+pre {
+  padding: var(--space-16);
+  margin: var(--space-16) 0;
+  overflow: auto;
+  border: 1px solid var(--color-border);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-standard);
+  border: none;
+  text-decoration: none;
+  position: relative;
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-hover);
+}
+
+.btn--primary:active {
+  background: var(--color-primary-active);
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.btn--secondary:hover {
+  background: var(--color-secondary-hover);
+}
+
+.btn--secondary:active {
+  background: var(--color-secondary-active);
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.btn--outline:hover {
+  background: var(--color-secondary);
+}
+
+.btn--sm {
+  padding: var(--space-4) var(--space-12);
+  font-size: var(--font-size-sm);
+  border-radius: var(--radius-sm);
+}
+
+.btn--lg {
+  padding: var(--space-10) var(--space-20);
+  font-size: var(--font-size-lg);
+  border-radius: var(--radius-md);
+}
+
+.btn--full-width {
+  width: 100%;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Form elements */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: var(--space-8) var(--space-12);
+  font-size: var(--font-size-md);
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  transition: border-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+textarea.form-control {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+}
+
+select.form-control {
+  padding: var(--space-8) var(--space-12);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: var(--select-caret-light);
+  background-repeat: no-repeat;
+  background-position: right var(--space-12) center;
+  background-size: 16px;
+  padding-right: var(--space-32);
+}
+
+/* Add a dark mode specific caret */
+@media (prefers-color-scheme: dark) {
+  select.form-control {
+    background-image: var(--select-caret-dark);
+  }
+}
+
+/* Also handle data-color-scheme */
+[data-color-scheme="dark"] select.form-control {
+  background-image: var(--select-caret-dark);
+}
+
+[data-color-scheme="light"] select.form-control {
+  background-image: var(--select-caret-light);
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  outline: var(--focus-outline);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: var(--space-8);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+}
+
+.form-group {
+  margin-bottom: var(--space-16);
+}
+
+/* Card component */
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--duration-normal) var(--ease-standard);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card__body {
+  padding: var(--space-16);
+}
+
+.card__header,
+.card__footer {
+  padding: var(--space-16);
+  border-bottom: 1px solid var(--color-card-border-inner);
+}
+
+/* Status indicators - simplified with CSS variables */
+.status {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-6) var(--space-12);
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+}
+
+.status--success {
+  background-color: rgba(
+    var(--color-success-rgb, 33, 128, 141),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-success);
+  border: 1px solid
+    rgba(var(--color-success-rgb, 33, 128, 141), var(--status-border-opacity));
+}
+
+.status--error {
+  background-color: rgba(
+    var(--color-error-rgb, 192, 21, 47),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-error);
+  border: 1px solid
+    rgba(var(--color-error-rgb, 192, 21, 47), var(--status-border-opacity));
+}
+
+.status--warning {
+  background-color: rgba(
+    var(--color-warning-rgb, 168, 75, 47),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-warning);
+  border: 1px solid
+    rgba(var(--color-warning-rgb, 168, 75, 47), var(--status-border-opacity));
+}
+
+.status--info {
+  background-color: rgba(
+    var(--color-info-rgb, 98, 108, 113),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-info);
+  border: 1px solid
+    rgba(var(--color-info-rgb, 98, 108, 113), var(--status-border-opacity));
+}
+
+/* Container layout */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--space-16);
+  padding-left: var(--space-16);
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: var(--container-sm);
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--container-md);
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: var(--container-lg);
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: var(--container-xl);
+  }
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-4 {
+  gap: var(--space-4);
+}
+.gap-8 {
+  gap: var(--space-8);
+}
+.gap-16 {
+  gap: var(--space-16);
+}
+
+.m-0 {
+  margin: 0;
+}
+.mt-8 {
+  margin-top: var(--space-8);
+}
+.mb-8 {
+  margin-bottom: var(--space-8);
+}
+.mx-8 {
+  margin-left: var(--space-8);
+  margin-right: var(--space-8);
+}
+.my-8 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.p-0 {
+  padding: 0;
+}
+.py-8 {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+.px-8 {
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+}
+.py-16 {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+.px-16 {
+  padding-left: var(--space-16);
+  padding-right: var(--space-16);
+}
+
+.block {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: 2px;
+}
+
+/* Dark mode specifics */
+[data-color-scheme="dark"] .btn--outline {
+  border: 1px solid var(--color-border-secondary);
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url("FKGroteskNeue.woff2")
+    format('woff2');
+}
+
+/* END PERPLEXITY DESIGN SYSTEM */
+/* General Setup and Base Styles */
+@import url("css2?family=Cairo:wght@400;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    direction: ltr;
+    background-color: #1a1a1a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 1. Navbar Styles */
+.navbar {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #007bff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Button Base Style */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.primary-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: 2px solid #007bff;
+}
+
+.primary-btn:hover {
+    background-color: transparent;
+    color: #007bff;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.secondary-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* 2. Hero Section Styles */
+.hero-section {
+    background-color: #1a1a1a;
+    padding: 100px 0;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.greeting {
+    font-size: 1.5em;
+    color: #bbb;
+    margin-bottom: 5px;
+}
+
+.hero-text h1 {
+    font-size: 4.5em;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.title span {
+    color: #999;
+    font-size: 0.9em;
+}
+
+.description {
+    font-size: 1.1em;
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-image-container {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: visible;
+    box-shadow: 0 0 0 10px #2c2c2c, 0 0 0 15px #007bff, 0 10px 40px rgba(0, 123, 255, 0.3);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.hero-image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px #2c2c2c, 0 0 0 15px #007bff, 0 15px 50px rgba(0, 123, 255, 0.5);
+}
+
+.profile-photo-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, #3a3a3a 0%, #2c2c2c 50%, #1a1a1a 100%);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-photo-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(0, 123, 255, 0.1) 100%);
+    border-radius: 50%;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.hero-image-container:hover .profile-photo-placeholder::before {
+    opacity: 1;
+}
+
+.profile-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+    transition: all 0.5s ease;
+}
+
+.hero-image-container:hover .profile-avatar {
+    transform: scale(1.1);
+    box-shadow: 0 12px 35px rgba(0, 123, 255, 0.6);
+}
+
+.profile-avatar i {
+    font-size: 5.5em;
+    color: #fff;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.photo-label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image-container:hover .photo-label {
+    color: #007bff;
+    transform: translateY(-5px);
+}
+
+/* 3. About Me Section */
+.about-me-section {
+    background-color: #fff;
+    color: #333;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-me-section h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #007bff;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.about-me-section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+.about-text {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.closing-statement {
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* 4. Education Section */
+.education-section {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.education-section h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: #1a1a1a;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.education-section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.education-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.education-card h3 {
+    color: #007bff;
+    font-size: 1.5em;
+    margin: 0;
+    text-align: left;
+}
+
+.education-card .date,
+.education-card .platform {
+    font-weight: bold;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.education-card .institution {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    text-align: left;
+}
+
+.education-card .instructor {
+    color: #888;
+    display: block;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.education-card .description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.website-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.website-link:hover {
+    text-decoration: underline;
+}
+
+.topics-list,
+.learning-sources {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.topics-list li {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.95em;
+    text-align: left;
+}
+
+.topics-list i {
+    color: green;
+    margin-right: 10px;
+}
+
+.continuous-learning .learning-sources li {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: left;
+}
+
+/* 5. Skills & Tools Section */
+.tools-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.tools-section h2 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: #007bff;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.tools-section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.tools-category {
+    margin-bottom: 60px;
+}
+
+.tools-category h3 {
+    font-size: 2em;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.tools-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.tool-item {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-left: 4px solid #007bff;
+}
+
+.tool-item:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.02);
+}
+
+.tool-item i {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.tool-item span {
+    font-weight: bold;
+    color: #fff;
+    margin-right: 5px;
+}
+
+/* 6. Projects Section */
+.projects-section {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.projects-section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.conceptual-note {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #cc0000;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.conceptual-note i {
+    margin-right: 8px;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Featured Project Card */
+.project-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* Social Media Section */
+.social-media-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 2px solid #dee2e6;
+}
+
+.social-heading {
+    font-size: 1.5em;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 35px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    min-width: 150px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.social-button i {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease;
+}
+
+.social-button span {
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+.social-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.4s ease;
+}
+
+.social-button:hover::before {
+    left: 100%;
+}
+
+.social-button:hover {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.social-button:hover i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Platform-specific colors */
+.social-button.facebook {
+    background: linear-gradient(135deg, #1877f2 0%, #0d65d9 100%);
+    animation-delay: 0s;
+}
+
+.social-button.instagram {
+    background: linear-gradient(135deg, #E4405F 0%, #C13584 50%, #833AB4 100%);
+    animation-delay: 0.5s;
+}
+
+.social-button.tiktok {
+    background: linear-gradient(135deg, #000000 0%, #2c2c2c 100%);
+    animation-delay: 1s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+    50% {
+        box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+    }
+}
+
+/* Content Calendar Section */
+.content-calendar-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 2px solid #dee2e6;
+}
+
+.calendar-heading {
+    font-size: 1.6em;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 15px;
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    font-size: 0.95em;
+    min-width: 800px;
+}
+
+.content-calendar-table thead {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: #fff;
+}
+
+.content-calendar-table th {
+    padding: 15px 12px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    border-bottom: 3px solid #0056b3;
+}
+
+.content-calendar-table tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.content-calendar-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.content-calendar-table tbody tr:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.15);
+}
+
+.content-calendar-table td {
+    padding: 15px 12px;
+    color: #333;
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+.content-calendar-table td:first-child {
+    font-weight: bold;
+    color: #007bff;
+    white-space: nowrap;
+}
+
+.platform-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.objective-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.objective-badge.awareness {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border: 2px solid #1976d2;
+}
+
+.objective-badge.engagement {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+    border: 2px solid #7b1fa2;
+}
+
+.objective-badge.entertainment {
+    background-color: #fff3e0;
+    color: #e65100;
+    border: 2px solid #e65100;
+}
+
+.objective-badge.consideration {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+}
+
+/* Responsive design for table */
+@media (max-width: 768px) {
+    .content-calendar-section {
+        padding: 20px;
+    }
+
+    .calendar-heading {
+        font-size: 1.3em;
+    }
+
+    .content-calendar-table {
+        min-width: 100%;
+        font-size: 0.9em;
+    }
+
+    .content-calendar-table thead {
+        display: none;
+    }
+
+    .content-calendar-table,
+    .content-calendar-table tbody,
+    .content-calendar-table tr,
+    .content-calendar-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .content-calendar-table tr {
+        margin-bottom: 20px;
+        border: 2px solid #007bff;
+        border-radius: 8px;
+        padding: 15px;
+        background-color: #fff;
+    }
+
+    .content-calendar-table tbody tr:nth-child(even) {
+        background-color: #fff;
+    }
+
+    .content-calendar-table tbody tr:hover {
+        transform: none;
+    }
+
+    .content-calendar-table td {
+        text-align: left;
+        padding: 10px 0;
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .content-calendar-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: bold;
+        color: #007bff;
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
+
+    .platform-badge,
+    .objective-badge {
+        margin-top: 5px;
+    }
+}
+
+.project-header h3 {
+    font-size: 2em;
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-subtitle {
+    font-size: 1.3em;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.project-header .category {
+    display: block;
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.project-header .role-highlight {
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 1.1em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.project-summary h4 {
+    color: #333;
+    font-size: 1.4em;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.project-summary p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: left;
+    color: #555;
+}
+
+/* Visual Identity Section - Enhanced */
+.visual-identity-section-enhanced {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: linear-gradient(135deg, #fff8e1 0%, #ffe0b2 100%);
+    padding: 40px;
+    border-radius: 12px;
+    border: 3px solid #ffb74d;
+}
+
+.identity-heading {
+    color: #e65100 !important;
+    font-size: 1.6em !important;
+    border-left: 4px solid #e65100 !important;
+    padding-left: 10px !important;
+    margin-bottom: 15px !important;
+    text-align: left !important;
+}
+
+.identity-heading i {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.identity-description {
+    font-size: 1.05em;
+    color: #5d4037;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.large-slideshow {
+    height: 550px;
+}
+
+.slideshow-note {
+    text-align: center;
+    font-size: 0.95em;
+    color: #5d4037;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.slideshow-note i {
+    margin-right: 8px;
+    color: #e65100;
+}
+
+/* Old Visual Identity Section */
+.visual-identity-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.visual-identity-section h4 {
+    color: #333;
+    font-size: 1.4em;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.visual-identity-section p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.placeholder-img {
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 3em;
+}
+
+.placeholder-img span {
+    font-size: 0.3em;
+    margin-top: 10px;
+    color: #666;
+}
+
+.gallery-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Infographic Grid (KPIs) */
+.infographic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.kpi-box {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    border-top: 4px solid #007bff;
+    transition: transform 0.3s ease;
+}
+
+.kpi-box:hover {
+    transform: translateY(-5px);
+}
+
+.kpi-box i {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.kpi-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.kpi-number {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.kpi-description {
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Skills Demonstrated */
+.skills-demonstrated {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.skills-demonstrated h4 {
+    color: #333;
+    font-size: 1.4em;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    text-align: left;
+}
+
+.skills-list li {
+    background-color: #f9f9f9;
+    padding: 12px 15px;
+    border-radius: 6px;
+    color: #333;
+    border-left: 3px solid #007bff;
+}
+
+.skills-list i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.project-actions {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Fashion Erra Project Styles */
+
+/* Highlights Section */
+.highlights-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 2px solid #dee2e6;
+}
+
+.highlights-section h4 {
+    color: #333;
+    font-size: 1.4em;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.highlight-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    border-top: 4px solid #007bff;
+    transition: transform 0.3s ease;
+}
+
+.highlight-box:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-box i {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.highlight-label {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.highlight-value {
+    font-size: 1.6em;
+    font-weight: 900;
+    color: #007bff;
+    margin: 8px 0;
+}
+
+.highlight-description {
+    font-size: 0.85em;
+    color: #888;
+    display: block;
+    margin-top: 8px;
+}
+
+/* Buyer Personas Section */
+.personas-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.personas-section h4 {
+    color: #333;
+    font-size: 1.4em;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.personas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.persona-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.persona-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.15);
+    border-color: #007bff;
+}
+
+.persona-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+}
+
+.persona-header i {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.persona-header h5 {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0;
+}
+
+.persona-card p {
+    margin: 8px 0;
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+}
+
+.persona-motivation {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+    color: #007bff !important;
+    font-style: italic;
+}
+
+/* Funnel Visualization */
+.funnel-section {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 2px solid #90caf9;
+}
+
+.funnel-section h4 {
+    color: #1565c0;
+    font-size: 1.4em;
+    border-left: 4px solid #1565c0;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.funnel-intro {
+    text-align: center;
+    font-size: 1.1em;
+    color: #1565c0;
+    margin-bottom: 25px;
+}
+
+.funnel-visualization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.funnel-stage {
+    background-color: #fff;
+    color: #1565c0;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 3px 10px rgba(21, 101, 192, 0.2);
+    border: 2px solid #1565c0;
+    min-width: 200px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.funnel-stage:hover {
+    transform: scale(1.05);
+    background-color: #1565c0;
+    color: #fff;
+}
+
+.funnel-stage.final {
+    background-color: #1565c0;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 20px 50px;
+}
+
+.funnel-arrow {
+    font-size: 2em;
+    color: #1565c0;
+    font-weight: bold;
+}
+
+/* Metrics Section */
+.metrics-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.metrics-section h4 {
+    color: #333;
+    font-size: 1.4em;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.metric-box {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.metric-box:hover {
+    transform: translateY(-5px);
+    border-color: #007bff;
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.15);
+}
+
+.metric-name {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.metric-range {
+    font-size: 1.8em;
+    font-weight: 900;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.metric-description {
+    font-size: 0.85em;
+    color: #888;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Roadmap Section */
+.roadmap-section {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 2px solid #ffb74d;
+}
+
+.roadmap-section h4 {
+    color: #e65100;
+    font-size: 1.4em;
+    border-left: 4px solid #e65100;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.roadmap-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.roadmap-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(230, 81, 0, 0.15);
+    border-left: 4px solid #e65100;
+    transition: all 0.3s ease;
+}
+
+.roadmap-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(230, 81, 0, 0.25);
+}
+
+.roadmap-week {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #e65100;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.roadmap-content {
+    text-align: left;
+}
+
+.roadmap-phase {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.roadmap-goal {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+/* Campaign Execution Section */
+.campaign-execution-section {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 2px solid #81c784;
+}
+
+.campaign-execution-section h4 {
+    color: #2e7d32;
+    font-size: 1.6em;
+    border-left: 4px solid #2e7d32;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.campaign-intro {
+    text-align: center;
+    font-size: 1.05em;
+    color: #2e7d32;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e9ecef;
+}
+
+.platform-heading {
+    font-size: 1.4em;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.platform-heading i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.platform-description {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 25px;
+    text-align: left;
+    font-style: italic;
+}
+
+.subsection-heading {
+    font-size: 1.2em;
+    color: #495057;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: bold;
+    border-left: 3px solid #007bff;
+    padding-left: 10px;
+}
+
+.subsection-heading i {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+/* Slideshow */
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    padding: 20px;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide-placeholder {
+    width: 100%;
+    height: 85%;
+    background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px dashed #bbb;
+    color: #999;
+    font-size: 4em;
+    transition: all 0.3s ease;
+}
+
+.slide-placeholder:hover {
+    background: linear-gradient(135deg, #d0d0d0 0%, #e5e5e5 100%);
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.slide-placeholder i {
+    margin-bottom: 15px;
+}
+
+.slide-label {
+    font-size: 0.3em;
+    font-weight: bold;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.slide-caption {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    font-weight: 600;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+
+/* Navigation Buttons */
+.slide-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 123, 255, 0.8);
+    color: #fff;
+    border: none;
+    font-size: 2em;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    z-index: 10;
+    font-weight: bold;
+}
+
+.slide-nav:hover {
+    background-color: rgba(0, 123, 255, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slide-nav.prev {
+    left: 15px;
+}
+
+.slide-nav.next {
+    right: 15px;
+}
+
+/* Slide Indicators */
+.slide-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.indicator-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator-dot:hover {
+    background-color: #999;
+    transform: scale(1.2);
+}
+
+.indicator-dot.active {
+    background-color: #007bff;
+    width: 14px;
+    height: 14px;
+}
+
+/* Responsive adjustments for slideshows */
+@media (max-width: 768px) {
+    .campaign-execution-section {
+        padding: 20px;
+    }
+
+    .slideshow-container {
+        padding: 20px;
+    }
+
+    .slideshow {
+        height: 350px;
+    }
+
+    .platform-heading {
+        font-size: 1.2em;
+    }
+
+    .slide-placeholder {
+        font-size: 3em;
+    }
+
+    .slide-caption {
+        font-size: 0.9em;
+    }
+
+    .slide-nav {
+        font-size: 1.5em;
+        padding: 10px 15px;
+    }
+
+    .slide-nav.prev {
+        left: 10px;
+    }
+
+    .slide-nav.next {
+        right: 10px;
+    }
+
+    .indicator-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .indicator-dot.active {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* Responsive adjustments for Fashion Erra project */
+@media (max-width: 768px) {
+    .highlights-grid,
+    .personas-grid,
+    .metrics-grid,
+    .roadmap-timeline {
+        grid-template-columns: 1fr;
+    }
+    
+    .funnel-stage {
+        min-width: 150px;
+        padding: 12px 30px;
+        font-size: 1em;
+    }
+    
+    .funnel-stage.final {
+        font-size: 1.1em;
+        padding: 15px 35px;
+    }
+}
+
+/* 7. Contact Section */
+.contact-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.contact-subheading {
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-item {
+    background-color: #2c2c2c;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item i {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.contact-item h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.contact-item p {
+    color: #ccc;
+    font-size: 1em;
+}
+
+.contact-link {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    font-size: 1.1em;
+    padding: 15px 35px;
+}
+
+/* 8. Footer */
+.footer {
+    background-color: #0d0d0d;
+    color: #999;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.built-by {
+    font-style: italic;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 3em;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-text {
+        text-align: justify;
+    }
+
+    .education-grid,
+    .tools-list,
+    .image-gallery,
+    .infographic-grid,
+    .skills-list,
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===========================================================
+== أضف هذا الكود في نهاية ملف style.css 
+===========================================================
+*/
+
+/* * هذا الكود سيجعل صورك الجديدة تظهر 
+ * بنفس أبعاد الـ Placeholder الرمادي 
+*/
+.slide-img {
+  width: 100%;
+  height: 85%; /* هذا يطابق ارتفاع الـ placeholder */
+  
+  /* * استخدم 'contain' لتضمن ظهور الصورة كاملة
+   * أو استخدم 'cover' لتملأ الصورة الإطار (قد يقص الأطراف)
+   */
+  object-fit: contain; 
+  
+  border-radius: 8px; /* هذا يطابق حواف الـ placeholder */
+  background-color: #f0f0f0; /* لون خلفية في حال كانت الصورة شفافة */
+}
+
+/* * هذا الكود يخفي أيقونات الـ Placeholder القديمة
+ * إذا كانت لا تزال تظهر عن طريق الخطأ
+*/
+.slide-placeholder {
+    display: none;
+}/* =======================================================
+   == كود الإصلاح: إلغاء تأثير المنظور (Perspective) والتضييق ==
+   ======================================================= */
+
+/* 1. يستهدف حاويات عرض الشرائح الرئيسية لضمان إلغاء المنظور عليها */
+#project-slideshow-1,
+#project-slideshow-2,
+.project-slideshow-container {
+    /* إلغاء خاصية المنظور لضمان عرض مستوٍ وطبيعي بدلاً من التدرج ثلاثي الأبعاد */
+    perspective: none !important;
+    
+    /* إلغاء أي تحويلات قد تسبب تصغير الحجم (Scale) */
+    transform: none !important;
+}
+
+/* 2. يستهدف الشرائح الداخلية نفسها (الـ Slides) لإلغاء أي تشويه في شكلها */
+#project-slideshow-1 .slide,
+#project-slideshow-2 .slide,
+.project-slideshow-container .slide {
+    /* التأكد من أن الشرائح لا تتأثر بأي تغيير في الحجم أو الشكل */
+    transform: none !important;
+}
+
+/* 3. كود إضافي لإلغاء أي تأثير "تلاشي" قد يظهر على الشرائح */
+.project-slideshow-container .slide,
+.project-slideshow-container .slide.active {
+    /* يضمن الشفافية الكاملة أو عدم تطبيق أي تغير في الشفافية/العمق عند التمرير */
+    opacity: 1 !important;
+    z-index: 10;
+}
+</style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="logo">Ali Khalil</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1>Ali Khalil</h1>
+                <p class="title">Junior Digital Marketing Specialist</p>
+                <p class="description">
+                    I combine analytical thinking with creative execution to drive effective marketing campaigns, with a special passion for the intersection of AI and business growth.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn primary-btn">Start a Conversation</a>
+                    <a href="#projects" class="btn secondary-btn">View My Projects</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="profile-image">
+    <img src="Ali.jpg" alt="Profile Image of Ali Khalil" class="profile-img-actual">
+</div>
+                    <div class="photo-label">Ali Khalil</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about-me-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I'm passionate about one thing: <strong>making marketing work</strong>. As a Junior Digital Marketing Specialist trained at the <strong>Institute of Management Professionals</strong>, I combine analytical thinking with creative execution to build campaigns that actually move the needle.
+            </p>
+            <p class="about-text">
+                What excites me most? The intersection of <strong>AI and marketing</strong>. Discovering how data can unlock growth. Building brands that resonate. Creating funnels that convert.
+            </p>
+            <p class="about-text closing-statement">
+                I'm eager to bring this enthusiasm to a team where I can grow, learn, and prove that dedication and smart strategy can drive extraordinary results.
+            </p>
+            <a href="#" class="btn secondary-btn">Download Resume (CV)</a>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2>Education &amp; Certifications</h2>
+            <div class="education-grid">
+                
+                <div class="education-card">
+                    <div class="card-header">
+                        <h3>Digital Marketing Diploma</h3>
+                        <p class="date">2024</p>
+                    </div>
+                    <p class="institution">
+                        <i class="fas fa-university"></i> Institute of Management Professionals 
+                        <span class="instructor">- Instructor: Eng. Ashraf El Rouby</span>
+                    </p>
+                    <a href="https://imanagementpro.com/en/" target="_blank" class="website-link">
+                        View Institution
+                    </a>
+                    <ul class="topics-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>AI-Powered Digital Marketing</strong></li>
+                        <li><i class="fas fa-check-circle"></i> Marketing Fundamentals &amp; Strategy</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Media Buying</strong> (Meta, TikTok, LinkedIn, Snapchat, Twitter)</li>
+                        <li><i class="fas fa-check-circle"></i> Google Ads &amp; YouTube</li>
+                        <li><i class="fas fa-check-circle"></i> Content Creation &amp; AI Tools Integration</li>
+                    </ul>
+                </div>
+                
+                <div class="education-card">
+                    <div class="card-header">
+                        <h3>Meta Blueprint Certification</h3>
+                        <p class="platform">Certification</p>
+                    </div>
+                    <p class="institution">
+                        <i class="fas fa-certificate"></i> Platform: Meta Business
+                    </p>
+                    <p class="description">Advanced Facebook &amp; Instagram advertising techniques and best practices.</p>
+                </div>
+
+                <div class="education-card continuous-learning">
+                    <div class="card-header">
+                        <h3>Continuous Learning</h3>
+                        <p class="date">Self-Paced</p>
+                    </div>
+                    <p class="institution">
+                        <i class="fas fa-lightbulb"></i> YouTube Learning &amp; Industry Experts
+                    </p>
+                    <p class="description">Following key insights and advanced strategies from industry leaders:</p>
+                    <ul class="learning-sources">
+                        <li>Basem Magdy</li>
+                        <li>Mahmoud Omar</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h2>Core Skills &amp; Tools</h2>
+            
+            <div class="tools-category">
+                <h3>🎨 Design &amp; AI Tools</h3>
+                <div class="tools-list">
+                    
+                    <div class="tool-item">
+                        <i class="fas fa-palette"></i>
+                        <span>Canva</span> - Design
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fas fa-robot"></i>
+                        <span>ChatGPT</span> - AI Assistant
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Claude</span> - AI Assistant
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fas fa-search-dollar"></i>
+                        <span>Perplexity</span> - AI Research
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <span>Ideogram</span> - AI Design
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fas fa-magic"></i>
+                        <span>Leonardo.AI</span> - AI Design
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="tools-category">
+                <h3>📈 Analytics &amp; Management</h3>
+                <div class="tools-list">
+                    
+                    <div class="tool-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Google Analytics</span> - Analytics
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fas fa-tags"></i>
+                        <span>Google Tag Manager</span> - Analytics
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fab fa-facebook-square"></i>
+                        <span>Meta Business Suite</span> - Management
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Business Manager</span> - Management
+                    </div>
+                    
+                    <div class="tool-item">
+                        <i class="fas fa-bullhorn"></i>
+                        <span>Ads Manager</span> - Advertising
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Featured Case Studies</h2>
+            
+            <p class="conceptual-note">
+                <i class="fas fa-flask"></i> Note: These are <strong>Conceptual Case Studies</strong> created for portfolio demonstration purposes.
+            </p>
+
+            <div class="projects-grid">
+
+            <div class="project-card featured-project">
+                
+                <!-- Social Media Section -->
+                <div class="social-media-section">
+                    <h4 class="social-heading">Follow the Campaign</h4>
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com/crustbeancafe" target="_blank" class="social-button facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/crustbeancafe" target="_blank" class="social-button instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@crustbeancafe" target="_blank" class="social-button tiktok">
+                            <i class="fab fa-tiktok"></i>
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Content Calendar Section -->
+                <div class="content-calendar-section">
+                    <h4 class="calendar-heading">Weekly Content Calendar</h4>
+                    <div class="table-container">
+                        <table class="content-calendar-table">
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Platform</th>
+                                    <th>Content Type</th>
+                                    <th>Idea</th>
+                                    <th>Objective</th>
+                                    <th>CTA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Day">Day 1 (Opening)</td>
+                                    <td data-label="Platform"><span class="platform-badge">Facebook + Instagram</span></td>
+                                    <td data-label="Content Type">Video / Reel</td>
+                                    <td data-label="Idea">Venue opening video – first scene from the atmosphere + slogan "We've started!"</td>
+                                    <td data-label="Objective"><span class="objective-badge awareness">Awareness</span></td>
+                                    <td data-label="CTA">"Come see for yourself!"</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Day">Day 2</td>
+                                    <td data-label="Platform"><span class="platform-badge">Instagram + TikTok</span></td>
+                                    <td data-label="Content Type">Short Reel</td>
+                                    <td data-label="Idea">Barista preparing the first cup of coffee at the opening</td>
+                                    <td data-label="Objective"><span class="objective-badge engagement">Engagement</span></td>
+                                    <td data-label="CTA">"Share your first coffee experience with us!"</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Day">Day 3</td>
+                                    <td data-label="Platform"><span class="platform-badge">Facebook</span></td>
+                                    <td data-label="Content Type">Static Post</td>
+                                    <td data-label="Idea">Photo of the café's exterior + introductory copy</td>
+                                    <td data-label="Objective"><span class="objective-badge awareness">Awareness</span></td>
+                                    <td data-label="CTA">"Learn more about Crust &amp; Bean"</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Day">Day 4</td>
+                                    <td data-label="Platform"><span class="platform-badge">Instagram Stories</span></td>
+                                    <td data-label="Content Type">Story Series</td>
+                                    <td data-label="Idea">Poll: "How do you start your day? ☕ or 🥐?"</td>
+                                    <td data-label="Objective"><span class="objective-badge engagement">Engagement</span></td>
+                                    <td data-label="CTA">"Answer and win an opening discount"</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Day">Day 5</td>
+                                    <td data-label="Platform"><span class="platform-badge">TikTok + Instagram</span></td>
+                                    <td data-label="Content Type">Reel</td>
+                                    <td data-label="Idea">Before/After coffee transition</td>
+                                    <td data-label="Objective"><span class="objective-badge entertainment">Entertainment</span></td>
+                                    <td data-label="CTA">"Follow us for more fun moments!"</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Day">Day 6</td>
+                                    <td data-label="Platform"><span class="platform-badge">Facebook + Instagram</span></td>
+                                    <td data-label="Content Type">Carousel</td>
+                                    <td data-label="Idea">"3 reasons to visit Crust &amp; Bean today"</td>
+                                    <td data-label="Objective"><span class="objective-badge consideration">Consideration</span></td>
+                                    <td data-label="CTA">"Visit us today and enjoy your first cup of coffee on us!"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="project-header">
+                    <h3>Project 1</h3>
+                    <p class="project-subtitle">Crust &amp; Bean - Brand Launch</p>
+                    <span class="category">Food &amp; Beverage | Sheikh Zayed, Egypt</span>
+                    <p class="role-highlight">Role: Digital Marketing Strategist</p>
+                </div>
+                
+                <div class="project-summary">
+                    <h4>The Challenge &amp; Unique Solution</h4>
+                    <p>
+                        Launching a new cafe in a highly saturated Sheikh Zayed market dominated by established chains. The solution was positioning the brand as <strong>"The Missing Link"</strong>: the ONLY café combining specialty coffee with fresh artisan bread baked daily.
+                    </p>
+                </div>
+
+                <div class="visual-identity-section-enhanced">
+                    <div class="slideshow-container">
+                        <h4 class="identity-heading"><i class="fas fa-palette"></i> Visual Identity &amp; Brand Assets</h4>
+                        <p class="identity-description">Complete brand identity system including logo design, staff uniforms, packaging, signage, and marketing materials showcasing the café's warm, artisan aesthetic.</p>
+                        <div class="slideshow large-slideshow" id="identity-slideshow">
+    
+    <div class="slide active">
+        <img src="uniform.jpg" alt="Staff Uniforms - Branded Apparel" class="slide-img">
+        <p class="slide-caption">Staff Uniforms - Branded Apparel</p>
+    </div>
+    
+    <div class="slide">
+        <img src="cofee makr.jpg" alt="Latte Art & Coffee Preparation" class="slide-img">
+        <p class="slide-caption">Latte Art & Coffee Preparation</p>
+    </div>
+    
+    <div class="slide">
+        <img src="roadsc.jpg" alt="Billboard Advertising" class="slide-img">
+        <p class="slide-caption">Billboard Advertising</p>
+    </div>
+    
+    <div class="slide">
+        <img src="ditination.jpg" alt="Café Exterior Storefront" class="slide-img">
+        <p class="slide-caption">Café Exterior Storefront</p>
+    </div>
+    
+    <div class="slide">
+        <img src="paletging.jpg" alt="Logo & Brand Guidelines" class="slide-img">
+        <p class="slide-caption">Logo & Brand Guidelines</p>
+    </div>
+    
+    <div class="slide">
+        <img src="packetging.jpg" alt="Packaging Design - Coffee Cups" class="slide-img">
+        <p class="slide-caption">Packaging Design - Coffee Cups</p>
+    </div>
+    
+    <div class="slide">
+        <img src="bakary.jpg" alt="Fresh Bread Display" class="slide-img">
+        <p class="slide-caption">Fresh Bread Display</p>
+    </div>
+    
+    <div class="slide">
+        <img src="inside.jpg" alt="Interior Café Ambiance" class="slide-img">
+        <p class="slide-caption">Interior Café Ambiance</p>
+    </div>
+    
+    <div class="slide">
+        <img src="products.jpg" alt="Croissant & Pastry Selection" class="slide-img">
+        <p class="slide-caption">Croissant & Pastry Selection</p>
+    </div>
+    
+    <div class="slide">
+        <img src="happywithdrink.jpg" alt="Customer Coffee Experience" class="slide-img">
+        <p class="slide-caption">Customer Coffee Experience</p>
+    </div>
+    
+    <div class="slide">
+        <img src="focus.jpg" alt="Working Café Atmosphere" class="slide-img">
+        <p class="slide-caption">Working Café Atmosphere</p>
+    </div>
+    
+    <div class="slide">
+        <img src="identityview.jpg" alt="Social Media Grid Layout" class="slide-img">
+        <p class="slide-caption">Social Media Grid Layout</p>
+    </div>
+    
+    <div class="slide">
+        <img src="LOGO.jpg" alt="Brand Identity Overview" class="slide-img">
+        <p class="slide-caption">Brand Identity Overview</p>
+    </div>
+    
+    <div class="slide">
+        <img src="paletging.jpg" alt="Packaging Applications" class="slide-img">
+        <p class="slide-caption">Packaging Applications</p>
+    </div>
+    
+    <div class="slide">
+        <img src="workspase.jpg" alt="Café Interior Design" class="slide-img">
+        <p class="slide-caption">Café Interior Design</p>
+    </div>
+    
+    <div class="slide">
+        <img src="sitting.jpg" alt="Coffee & Croissant Pairing" class="slide-img">
+        <p class="slide-caption">Coffee & Croissant Pairing</p>
+    </div>
+    
+    <div class="slide">
+        <img src="sitting2.jpg" alt="Outdoor Seating Area" class="slide-img">
+        <p class="slide-caption">Seating Area</p>
+    </div>
+    
+    <div class="slide">
+        <img src="instagramover.jpg" alt="Product Photography" class="slide-img">
+        <p class="slide-caption">Product Photography (Social)</p>
+    </div>
+    
+    <div class="slide">
+        <img src="workperfectly.jpg" alt="Customer Moments" class="slide-img">
+        <p class="slide-caption">Customer Moments</p>
+    </div>
+    
+    <div class="slide">
+        <img src="menu.jpg" alt="Marketing Collateral" class="slide-img">
+        <p class="slide-caption">Marketing Collateral</p>
+    </div>
+    
+    <div class="slide">
+        <img src="product2.jpg" alt="Brand Touchpoints" class="slide-img">
+        <p class="slide-caption">Brand Touchpoints (Social Poll)</p>
+    </div>
+    
+    <div class="slide">
+        <img src="LOGO.jpg" alt="Complete Brand System" class="slide-img">
+        <p class="slide-caption">Complete Brand System</p>
+    </div>
+
+    <button class="slide-nav prev" onclick="changeSlide('identity-slideshow', -1)">❮</button>
+    <button class="slide-nav next" onclick="changeSlide('identity-slideshow', 1)">❯</button>
+</div>
+
+                <div class="infographic-grid">
+                    
+                    <div class="kpi-box">
+                        <i class="fas fa-dollar-sign"></i>
+                        <p class="kpi-title">Month 3 Revenue Projection</p>
+                        <p class="kpi-number">650,000 - 750,000 EGP</p>
+                        <span class="kpi-description">Target based on 250-300+ daily customers.</span>
+                    </div>
+
+                    <div class="kpi-box">
+                        <i class="fas fa-redo-alt"></i>
+                        <p class="kpi-title">Repeat Customer Rate</p>
+                        <p class="kpi-number">60% Target</p>
+                        <span class="kpi-description">Focusing on community and authenticity to build loyalty.</span>
+                    </div>
+
+                    <div class="kpi-box">
+                        <i class="fas fa-users"></i>
+                        <p class="kpi-title">Social Media Followers (3-Month)</p>
+                        <p class="kpi-number">5,000+ Followers</p>
+                        <span class="kpi-description">Built through visual storytelling on Instagram/TikTok.</span>
+                    </div>
+
+                </div>
+
+                <div class="skills-demonstrated">
+                    <h4>Skills Demonstrated</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-chart-pie"></i> Market Research &amp; Competitive Analysis</li>
+                        <li><i class="fas fa-sitemap"></i> Brand Strategy &amp; Positioning</li>
+                        <li><i class="fas fa-tv"></i> Social Media &amp; Content Strategy</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Strategic Location Choice</li>
+                        <li><i class="fas fa-camera-retro"></i> Visual Content Creation &amp; Curation</li>
+                        <li><i class="fas fa-desktop"></i> Digital Ad Creative Direction</li>
+                    </ul>
+                </div>
+                
+                <div class="project-actions">
+                    <a href="#" class="btn primary-btn">View Full Case Study PDF</a>
+                </div>
+
+            </div>
+
+            <!-- PROJECT 2: Fashion Erra -->
+            <div class="project-card featured-project">
+                
+                <div class="project-header">
+                    <h3>Project 2</h3>
+                    <p class="project-subtitle">Fashion Erra - Media Buying Strategy</p>
+                    <span class="category">Smart Electronics Dropshipping | Egypt E-Commerce</span>
+                    <p class="role-highlight">Role: Media Buying Strategist &amp; Analyst</p>
+                </div>
+                
+                <div class="project-summary">
+                    <h4>Overview</h4>
+                    <p>
+                        A comprehensive media buying strategy for a smart electronics dropshipping business targeting Egypt's 9 billion USD e-commerce market. The strategy focuses on achieving 50,000 EGP monthly sales with a 7,000 EGP advertising budget.
+                    </p>
+                </div>
+
+                <!-- Key Highlights -->
+                <div class="highlights-section">
+                    <h4>Key Highlights</h4>
+                    <div class="highlights-grid">
+                        <div class="highlight-box">
+                            <i class="fas fa-chart-line"></i>
+                            <p class="highlight-label">Market Size</p>
+                            <p class="highlight-value">9 Billion USD</p>
+                            <span class="highlight-description">Egypt's e-commerce market (2025)</span>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-users"></i>
+                            <p class="highlight-label">Target Audience</p>
+                            <p class="highlight-value">45M+ Users</p>
+                            <span class="highlight-description">Active on Facebook &amp; Instagram</span>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-dollar-sign"></i>
+                            <p class="highlight-label">Ad Budget</p>
+                            <p class="highlight-value">7,000 EGP</p>
+                            <span class="highlight-description">Monthly advertising spend</span>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-trophy"></i>
+                            <p class="highlight-label">Revenue Target</p>
+                            <p class="highlight-value">50,000 EGP</p>
+                            <span class="highlight-description">Monthly sales projection</span>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-bullseye"></i>
+                            <p class="highlight-label">Target ROAS</p>
+                            <p class="highlight-value">12x</p>
+                            <span class="highlight-description">By Week 4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buyer Personas -->
+                <div class="personas-section">
+                    <h4>Buyer Personas</h4>
+                    <div class="personas-grid">
+                        <div class="persona-card">
+                            <div class="persona-header">
+                                <i class="fas fa-user-graduate"></i>
+                                <h5>Budget-Conscious Student</h5>
+                            </div>
+                            <p><strong>Generation:</strong> Gen Z</p>
+                            <p><strong>Age:</strong> 18-24</p>
+                            <p><strong>Income:</strong> 3,000-6,000 EGP/month</p>
+                            <p><strong>Occupation:</strong> Student/Part-time</p>
+                            <p><strong>AOV:</strong> 300-500 EGP</p>
+                            <p class="persona-motivation"><em>Limited budget, wants trendy tech</em></p>
+                        </div>
+                        <div class="persona-card">
+                            <div class="persona-header">
+                                <i class="fas fa-briefcase"></i>
+                                <h5>Working Professional</h5>
+                            </div>
+                            <p><strong>Generation:</strong> Millennial</p>
+                            <p><strong>Age:</strong> 28-35</p>
+                            <p><strong>Income:</strong> 8,000-15,000 EGP/month</p>
+                            <p><strong>Occupation:</strong> Marketing/HR Professional</p>
+                            <p><strong>AOV:</strong> 600-900 EGP</p>
+                            <p class="persona-motivation"><em>Needs reliable products for work-life balance</em></p>
+                        </div>
+                        <div class="persona-card">
+                            <div class="persona-header">
+                                <i class="fas fa-laptop-code"></i>
+                                <h5>Tech-Savvy Manager</h5>
+                            </div>
+                            <p><strong>Generation:</strong> Millennial</p>
+                            <p><strong>Age:</strong> 30-38</p>
+                            <p><strong>Income:</strong> 10,000-20,000 EGP/month</p>
+                            <p><strong>Occupation:</strong> Engineer/Manager</p>
+                            <p><strong>AOV:</strong> 1,000-1,500 EGP</p>
+                            <p class="persona-motivation"><em>Needs premium quality for productivity</em></p>
+                        </div>
+                        <div class="persona-card">
+                            <div class="persona-header">
+                                <i class="fas fa-video"></i>
+                                <h5>Content Creator</h5>
+                            </div>
+                            <p><strong>Generation:</strong> Gen Z</p>
+                            <p><strong>Age:</strong> 20-26</p>
+                            <p><strong>Income:</strong> 4,000-8,000 EGP/month</p>
+                            <p><strong>Occupation:</strong> Content Creator/Freelancer</p>
+                            <p><strong>AOV:</strong> 400-700 EGP</p>
+                            <p class="persona-motivation"><em>Wants stylish accessories for social media</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campaign Execution Across Platforms -->
+                <div class="campaign-execution-section">
+                    <h4>Campaign Execution Across Platforms</h4>
+                    <p class="campaign-intro">Real implementation showing campaign hierarchy, targeting, and creative execution across all major advertising platforms</p>
+                    
+                    <!-- Facebook Campaign Slideshow -->
+                    <div class="slideshow-container">
+                        <h5 class="platform-heading"><i class="fab fa-facebook"></i> Facebook Ads Campaign</h5>
+                        <p class="platform-description">Campaign Structure: Campaign → Ad Sets → Ad Creatives</p>
+                       <div class="slideshow" id="facebook-slideshow">
+    
+    <div class="slide active">
+        <img src="Campiain.png" alt="Facebook Campaign Settings" class="slide-img">
+        <p class="slide-caption">Facebook Campaign Settings - Objective, Budget &amp; Schedule</p>
+    </div>
+    
+    <div class="slide">
+        <img src="Ad Set 1.png" alt="Ad Set 1 Configuration" class="slide-img">
+        <p class="slide-caption">Ad Set Configuration - Targeting, Placement &amp; Budget</p>
+    </div>
+    
+    <div class="slide">
+        <img src="Ad Set 2.png" alt="Ad Set 2 Configuration" class="slide-img">
+        <p class="slide-caption">Additional Ad Set - Alternative Audience Targeting</p>
+    </div>
+    
+    <div class="slide">
+        <img src="ad1.png" alt="Ad Creative 1" class="slide-img">
+        <p class="slide-caption">Ad Creative - Product Showcase &amp; Copy</p>
+    </div>
+    
+    <div class="slide">
+        <img src="ad2.png" alt="Ad Creative 2" class="slide-img">
+        <p class="slide-caption">Ad Creative - Alternative Design &amp; Messaging</p>
+    </div>
+    
+    <button class="slide-nav prev" onclick="changeSlide('facebook-slideshow', -1)">❮</button>
+    <button class="slide-nav next" onclick="changeSlide('facebook-slideshow', 1)">❯</button>
+</div>
+                    <!-- TikTok Campaign Slideshow -->
+                    <div class="slideshow-container">
+                        <h5 class="platform-heading"><i class="fab fa-tiktok"></i> TikTok Ads Campaign</h5>
+                        <p class="platform-description">Campaign Structure: Campaign → Ad Groups → Ad Creatives</p>
+                        <div class="slideshow" id="tiktok-slideshow">
+    
+    <div class="slide active">
+        <img src="tiktok-campaign.png" alt="TikTok Campaign Overview" class="slide-img">
+        <p class="slide-caption">TikTok Campaign Setup - Objective, Budget &amp; Optimization</p>
+    </div>
+    
+    <div class="slide">
+        <img src="tiktok-ad-group.png" alt="TikTok Ad Group Configuration" class="slide-img">
+        <p class="slide-caption">Ad Group Configuration - Audience, Placements &amp; Bidding</p>
+    </div>
+    
+    <div class="slide">
+        <img src="tiktok-ad1.png" alt="TikTok Ad Creative 1" class="slide-img">
+        <p class="slide-caption">TikTok Ad Creative - Ad Setup &amp; Identity</p>
+    </div>
+    
+    <div class="slide">
+        <img src="tiktok-ad2.png" alt="TikTok Ad Creative 2" class="slide-img">
+        <p class="slide-caption">TikTok Ad Creative - Interactive Add-ons</p>
+    </div>
+
+    <div class="slide">
+        <div class="slide-placeholder">
+            <i class="fab fa-tiktok"></i>
+            <span class="slide-label">Creative 3 Placeholder</span>
+        </div>
+        <p class="slide-caption">Creative Optimization Example</p>
+    </div>
+
+    <div class="slide">
+        <div class="slide-placeholder">
+            <i class="fas fa-chart-line"></i>
+            <span class="slide-label">Results/Optimization Placeholder</span>
+        </div>
+        <p class="slide-caption">Performance Results &amp; Optimization Strategy</p>
+    </div>
+    
+    <button class="slide-nav prev" onclick="changeSlide('tiktok-slideshow', -1)">❮</button>
+    <button class="slide-nav next" onclick="changeSlide('tiktok-slideshow', 1)">❯</button>
+</div>
+
+                    <!-- Google Ads Campaign Slideshow -->
+                    <div class="slideshow-container">
+                        <h5 class="platform-heading"><i class="fab fa-google"></i> Google Ads Campaign</h5>
+                        <p class="platform-description">Campaign Structure: Campaign Settings → Bidding → Budget → Networks → Keywords → Assets → Ad Groups → Performance</p>
+                        <div class="slideshow" id="google-slideshow">
+    
+    <div class="slide active">
+        <img src="1.png" alt="Google Ads Campaign Settings" class="slide-img">
+        <p class="slide-caption">Google Ads Campaign - Networks, Locations &amp; Languages</p>
+    </div>
+    
+    <div class="slide">
+        <img src="2.png" alt="Bidding Strategy" class="slide-img">
+        <p class="slide-caption">Bidding Strategy - Customer Acquisition Focus</p>
+    </div>
+    
+    <div class="slide">
+        <img src="3.png" alt="Budget Configuration" class="slide-img">
+        <p class="slide-caption">Daily Budget Setup</p>
+    </div>
+    
+    <div class="slide">
+        <img src="4.png" alt="Keyword & Asset Generation" class="slide-img">
+        <p class="slide-caption">Keyword & Asset Generation - URL and Keyword Creation</p>
+    </div>
+    
+    <div class="slide">
+        <img src="5.png" alt="Ad Group Keywords" class="slide-img">
+        <p class="slide-caption">Ad Group Keyword Setup</p>
+    </div>
+
+    <div class="slide">
+        <img src="6.png" alt="Ad Groups Overview" class="slide-img">
+        <p class="slide-caption">Ad Groups - Keywords &amp; Assets Overview</p>
+    </div>
+
+    <div class="slide">
+        <img src="7.png" alt="Ad Creation Headlines" class="slide-img">
+        <p class="slide-caption">Ad Creation - Headlines &amp; Descriptions</p>
+    </div>
+
+    <div class="slide">
+        <img src="8.png" alt="Ad Assets Sitelinks" class="slide-img">
+        <p class="slide-caption">Ad Creation - Sitelinks &amp; Assets</p>
+    </div>
+    
+    <button class="slide-nav prev" onclick="changeSlide('google-slideshow', -1)">❮</button>
+    <button class="slide-nav next" onclick="changeSlide('google-slideshow', 1)">❯</button>
+</div>
+
+                    <!-- Snapchat Campaign Slideshow -->
+                    <div class="slideshow-container">
+                        <h5 class="platform-heading"><i class="fab fa-snapchat-ghost"></i> Snapchat Ads Campaign</h5>
+                        <p class="platform-description">Campaign Structure: Campaign → Ad Set → Budget → Creatives</p>
+                       <div class="slideshow" id="snapchat-slideshow">
+    
+    <div class="slide active">
+        <img src="campaign.png" alt="Snapchat Campaign Overview" class="slide-img">
+        <p class="slide-caption">Snapchat Campaign - FASHION ERRA SALES Campaign Details</p>
+    </div>
+    
+    <div class="slide">
+        <img src="Ad Set 1.png" alt="Ad Set 1 Configuration" class="slide-img">
+        <p class="slide-caption">Ad Set Setup - Audience, Budget &amp; Timeline</p>
+    </div>
+
+    <div class="slide">
+        <img src="ad set 2.png" alt="Ad Set 2 Configuration" class="slide-img">
+        <p class="slide-caption">Ad Set Setup - Location &amp; Demographics</p>
+    </div>
+    
+    <div class="slide">
+        <img src="ad1.png" alt="Snapchat Ad Creative 1" class="slide-img">
+        <p class="slide-caption">Snapchat Ad Creative - Smart Watch X10</p>
+    </div>
+    
+    <div class="slide">
+        <img src="ad 2.png" alt="Snapchat Ad Creative 2" class="slide-img">
+        <p class="slide-caption">Snapchat Ad Creative - AirPods with Details</p>
+    </div>
+    
+    <button class="slide-nav prev" onclick="changeSlide('snapchat-slideshow', -1)">❮</button>
+    <button class="slide-nav next" onclick="changeSlide('snapchat-slideshow', 1)">❯</button>
+</div>
+                    <!-- Analytics & Tracking Slideshow -->
+                    <div class="slideshow-container">
+                        <h5 class="platform-heading"><i class="fas fa-chart-line"></i> Analytics &amp; Tracking</h5>
+                        <p class="platform-description">Complete tracking infrastructure with Google Tag Manager (GTM) and Google Analytics (GA)</p>
+                        <div class="slideshow" id="gtm-slideshow">
+    
+    <div class="slide active">
+        <img src="gtm-1.png" alt="Google Tag Manager Workspace" class="slide-img">
+        <p class="slide-caption">GTM Workspace - Tags, Triggers &amp; Variables</p>
+    </div>
+    
+    <div class="slide">
+        <img src="gtm-2.png" alt="Tags Configuration" class="slide-img">
+        <p class="slide-caption">Tags Setup - Facebook, TikTok &amp; Google Ads</p>
+    </div>
+    
+    <div class="slide">
+        <img src="gtm-3.png" alt="Custom Variables" class="slide-img">
+        <p class="slide-caption">Variables Configuration - Data Layer &amp; Built-in Variables</p>
+    </div>
+    
+    <div class="slide">
+        <img src="gtm-4.png" alt="Triggers Configuration" class="slide-img">
+        <p class="slide-caption">Triggers Setup - Button Clicks, Page Views &amp; Custom Events</p>
+    </div>
+    
+    <button class="slide-nav prev" onclick="changeSlide('gtm-slideshow', -1)">❮</button>
+    <button class="slide-nav next" onclick="changeSlide('gtm-slideshow', 1)">❯</button>
+</div>
+
+                <!-- Funnel Visualization -->
+                <div class="funnel-section">
+                    <h4>Conversion Funnel</h4>
+                    <p class="funnel-intro">Customer Journey with <strong>2.5% Conversion Rate</strong> (above Egypt's e-commerce average)</p>
+                    <div class="funnel-visualization">
+                        <div class="funnel-stage">Impression</div>
+                        <div class="funnel-arrow">↓</div>
+                        <div class="funnel-stage">Click</div>
+                        <div class="funnel-arrow">↓</div>
+                        <div class="funnel-stage">Product View</div>
+                        <div class="funnel-arrow">↓</div>
+                        <div class="funnel-stage">Add to Cart</div>
+                        <div class="funnel-arrow">↓</div>
+                        <div class="funnel-stage">Checkout</div>
+                        <div class="funnel-arrow">↓</div>
+                        <div class="funnel-stage final">Purchase</div>
+                    </div>
+                </div>
+
+                <!-- Key Metrics -->
+                <div class="metrics-section">
+                    <h4>Key Metrics</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-box">
+                            <p class="metric-name">CPM</p>
+                            <p class="metric-range">20-40 EGP</p>
+                            <span class="metric-description">Cost per 1,000 impressions</span>
+                        </div>
+                        <div class="metric-box">
+                            <p class="metric-name">CPC</p>
+                            <p class="metric-range">0.5-1.5 EGP</p>
+                            <span class="metric-description">Cost per Click</span>
+                        </div>
+                        <div class="metric-box">
+                            <p class="metric-name">CPA</p>
+                            <p class="metric-range">20-40 EGP</p>
+                            <span class="metric-description">Cost per Acquisition</span>
+                        </div>
+                        <div class="metric-box">
+                            <p class="metric-name">CTR</p>
+                            <p class="metric-range">2-4%</p>
+                            <span class="metric-description">Click-through Rate</span>
+                        </div>
+                        <div class="metric-box">
+                            <p class="metric-name">Product View Rate</p>
+                            <p class="metric-range">30-50%</p>
+                            <span class="metric-description">Visitors who view products</span>
+                        </div>
+                        <div class="metric-box">
+                            <p class="metric-name">Conversion Rate</p>
+                            <p class="metric-range">2-3%</p>
+                            <span class="metric-description">Overall conversion rate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4-Week Roadmap -->
+                <div class="roadmap-section">
+                    <h4>4-Week Roadmap</h4>
+                    <div class="roadmap-timeline">
+                        <div class="roadmap-item">
+                            <div class="roadmap-week">Week 1</div>
+                            <div class="roadmap-content">
+                                <p class="roadmap-phase">Testing</p>
+                                <p class="roadmap-goal">Get first 10 sales with positive reviews</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-item">
+                            <div class="roadmap-week">Week 2</div>
+                            <div class="roadmap-content">
+                                <p class="roadmap-phase">Optimization</p>
+                                <p class="roadmap-goal">Identify top 3 winning products</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-item">
+                            <div class="roadmap-week">Week 3</div>
+                            <div class="roadmap-content">
+                                <p class="roadmap-phase">Scaling</p>
+                                <p class="roadmap-goal">Scale budget on winners only</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-item">
+                            <div class="roadmap-week">Week 4</div>
+                            <div class="roadmap-content">
+                                <p class="roadmap-phase">Target Achievement</p>
+                                <p class="roadmap-goal">Achieve 12x ROAS target</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Demonstrated -->
+                <div class="skills-demonstrated">
+                    <h4>Skills Demonstrated</h4>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-bullhorn"></i> Media Buying &amp; Budget Allocation</li>
+                        <li><i class="fas fa-user-friends"></i> Buyer Persona Development</li>
+                        <li><i class="fas fa-filter"></i> Conversion Funnel Optimization</li>
+                        <li><i class="fas fa-shopping-cart"></i> E-commerce Strategy</li>
+                        <li><i class="fas fa-chart-bar"></i> Data Analysis &amp; KPI Tracking</li>
+                        <li><i class="fab fa-facebook"></i> Meta Ads Management</li>
+                    </ul>
+                </div>
+                
+                <div class="project-actions">
+                    <a href="#" class="btn primary-btn">View Full Strategy</a>
+                </div>
+
+            </div>
+
+
+
+            </div> <!-- Close projects-grid -->
+            
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Let's Drive Extraordinary Results Together.</h2>
+            <p class="contact-subheading">I'm actively seeking opportunities to leverage smart strategy and AI to unlock growth. Feel free to connect!</p>
+            
+            <div class="contact-info-grid">
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <a href="mailto:alikhalil.marketer@gmail.com" class="contact-link">
+                        alikhalil.marketer@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Phone</h4>
+                    <a href="tel:01006597820" class="contact-link">
+                        01006597820
+                    </a>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Location</h4>
+                    <p>Dakahlia, Egypt</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/alimarketing/" target="_blank" class="contact-link">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+                
+            </div>
+            
+            <a href="mailto:alikhalil.marketer@gmail.com?subject=Opportunity%20for%20a%20Junior%20Digital%20Marketing%20Specialist" class="btn secondary-btn cta-btn">
+                Send a Message Now
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Ali Khalil | Digital Marketing Specialist Portfolio</p>
+            <p class="built-by">Designed and built with passion.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Slideshow functionality
+        function initSlideshows() {
+            const slideshows = ['identity-slideshow', 'facebook-slideshow', 'tiktok-slideshow', 'google-slideshow', 'snapchat-slideshow', 'analytics-slideshow'];
+            slideshows.forEach(id => {
+                const slideshow = document.getElementById(id);
+                if (slideshow) {
+                    const slides = slideshow.querySelectorAll('.slide');
+                    const indicatorId = id.replace('-slideshow', '-indicators');
+                    const indicatorContainer = document.getElementById(indicatorId);
+                    
+                    if (indicatorContainer) {
+                        indicatorContainer.innerHTML = '';
+                        slides.forEach((_, index) => {
+                            const dot = document.createElement('span');
+                            dot.className = 'indicator-dot' + (index === 0 ? ' active' : '');
+                            dot.onclick = () => goToSlide(id, index);
+                            indicatorContainer.appendChild(dot);
+                        });
+                    }
+                }
+            });
+        }
+
+        function changeSlide(slideshowId, direction) {
+            const slideshow = document.getElementById(slideshowId);
+            const slides = slideshow.querySelectorAll('.slide');
+            const indicatorId = slideshowId.replace('-slideshow', '-indicators');
+            const indicators = document.getElementById(indicatorId);
+            const dots = indicators ? indicators.querySelectorAll('.indicator-dot') : [];
+            
+            let currentIndex = 0;
+            slides.forEach((slide, index) => {
+                if (slide.classList.contains('active')) {
+                    currentIndex = index;
+                }
+            });
+            
+            slides[currentIndex].classList.remove('active');
+            if (dots[currentIndex]) dots[currentIndex].classList.remove('active');
+            
+            let newIndex = currentIndex + direction;
+            if (newIndex >= slides.length) newIndex = 0;
+            if (newIndex < 0) newIndex = slides.length - 1;
+            
+            slides[newIndex].classList.add('active');
+            if (dots[newIndex]) dots[newIndex].classList.add('active');
+        }
+
+        function goToSlide(slideshowId, index) {
+            const slideshow = document.getElementById(slideshowId);
+            const slides = slideshow.querySelectorAll('.slide');
+            const indicatorId = slideshowId.replace('-slideshow', '-indicators');
+            const indicators = document.getElementById(indicatorId);
+            const dots = indicators ? indicators.querySelectorAll('.indicator-dot') : [];
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            if (dots[index]) dots[index].classList.add('active');
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', initSlideshows);
+
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
